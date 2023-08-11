@@ -14,6 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
+        let homeView = UINavigationController(rootViewController: HomeViewController())
+        
+        let mainTabBarController = MainTabBarController()
+        mainTabBarController.setViewControllers([
+            homeView
+        ], animated: false)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = mainTabBarController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }
