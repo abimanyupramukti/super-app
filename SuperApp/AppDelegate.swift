@@ -15,11 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         let homeView = UINavigationController(rootViewController: HomeViewController())
+        let cameraView = UINavigationController(rootViewController: CameraViewController())
         
         let mainTabBarController = MainTabBarController()
         mainTabBarController.setViewControllers([
-            homeView
+            homeView,
+            cameraView
         ], animated: false)
+            
+        CoreDataManager.shared.container
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = mainTabBarController

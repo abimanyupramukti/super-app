@@ -20,6 +20,9 @@
 		4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094B1142A8655B0004FE8B2 /* AppDelegate.swift */; };
 		4094B11E2A8655B1004FE8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11D2A8655B1004FE8B2 /* Assets.xcassets */; };
 		4094B1212A8655B1004FE8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11F2A8655B1004FE8B2 /* LaunchScreen.storyboard */; };
+		40D623F82A8680FE00B60966 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623F72A8680FE00B60966 /* CameraViewController.swift */; };
+		40D623FA2A86818800B60966 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623F92A86818800B60966 /* CameraView.swift */; };
+		40D623FC2A8681F700B60966 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623FB2A8681F700B60966 /* VideoPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4094B11D2A8655B1004FE8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4094B1202A8655B1004FE8B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4094B1222A8655B1004FE8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D623F72A8680FE00B60966 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		40D623F92A86818800B60966 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		40D623FB2A8681F700B60966 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			children = (
 				4094B1142A8655B0004FE8B2 /* AppDelegate.swift */,
 				4015EC982A86592B001B5524 /* MainTabBarController.swift */,
+				40D623F72A8680FE00B60966 /* CameraViewController.swift */,
+				40D623F92A86818800B60966 /* CameraView.swift */,
+				40D623FB2A8681F700B60966 /* VideoPreviewView.swift */,
 				4015EC9C2A865BB2001B5524 /* HomeViewController.swift */,
 				4015EC9E2A865CBB001B5524 /* HomeView.swift */,
 				4015ECA42A866684001B5524 /* BottomsheetViewController.swift */,
@@ -163,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D623F82A8680FE00B60966 /* CameraViewController.swift in Sources */,
+				40D623FC2A8681F700B60966 /* VideoPreviewView.swift in Sources */,
 				4015EC992A86592B001B5524 /* MainTabBarController.swift in Sources */,
 				4015EC9B2A865B7C001B5524 /* TabBarViewController.swift in Sources */,
+				40D623FA2A86818800B60966 /* CameraView.swift in Sources */,
 				4015ECA12A865CEC001B5524 /* DefaultView.swift in Sources */,
 				4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */,
 				4015EC9F2A865CBB001B5524 /* HomeView.swift in Sources */,
@@ -314,6 +326,7 @@
 				DEVELOPMENT_TEAM = 336H2XD99W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need to access camera.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -341,6 +354,7 @@
 				DEVELOPMENT_TEAM = 336H2XD99W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SuperApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need to access camera.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
