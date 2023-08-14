@@ -13,7 +13,7 @@
 		4015EC9D2A865BB2001B5524 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015EC9C2A865BB2001B5524 /* HomeViewController.swift */; };
 		4015EC9F2A865CBB001B5524 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015EC9E2A865CBB001B5524 /* HomeView.swift */; };
 		4015ECA12A865CEC001B5524 /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA02A865CEC001B5524 /* DefaultView.swift */; };
-		4015ECA32A8660E0001B5524 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA22A8660E0001B5524 /* UIKitExtensions.swift */; };
+		4015ECA32A8660E0001B5524 /*  UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA22A8660E0001B5524 /*  UIKit+Extensions.swift */; };
 		4015ECA52A866684001B5524 /* BottomsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA42A866684001B5524 /* BottomsheetViewController.swift */; };
 		4015ECA72A8666B2001B5524 /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA62A8666B2001B5524 /* DefaultViewController.swift */; };
 		4015ECA92A866802001B5524 /* BottomsheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015ECA82A866802001B5524 /* BottomsheetView.swift */; };
@@ -31,7 +31,7 @@
 		4015EC9C2A865BB2001B5524 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4015EC9E2A865CBB001B5524 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4015ECA02A865CEC001B5524 /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
-		4015ECA22A8660E0001B5524 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		4015ECA22A8660E0001B5524 /*  UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		4015ECA42A866684001B5524 /* BottomsheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsheetViewController.swift; sourceTree = "<group>"; };
 		4015ECA62A8666B2001B5524 /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
 		4015ECA82A866802001B5524 /* BottomsheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsheetView.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				4015ECA62A8666B2001B5524 /* DefaultViewController.swift */,
 				4015ECA02A865CEC001B5524 /* DefaultView.swift */,
 				4015EC9A2A865B7C001B5524 /* TabBarViewController.swift */,
-				4015ECA22A8660E0001B5524 /* UIKitExtensions.swift */,
+				4015ECA22A8660E0001B5524 /*  UIKit+Extensions.swift */,
 			);
 			path = SuperApp;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 				4015ECA12A865CEC001B5524 /* DefaultView.swift in Sources */,
 				4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */,
 				4015EC9F2A865CBB001B5524 /* HomeView.swift in Sources */,
-				4015ECA32A8660E0001B5524 /* UIKitExtensions.swift in Sources */,
+				4015ECA32A8660E0001B5524 /*  UIKit+Extensions.swift in Sources */,
 				4015ECA72A8666B2001B5524 /* DefaultViewController.swift in Sources */,
 				4015ECA92A866802001B5524 /* BottomsheetView.swift in Sources */,
 				4015EC9D2A865BB2001B5524 /* HomeViewController.swift in Sources */,

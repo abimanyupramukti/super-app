@@ -1,5 +1,5 @@
 //
-//  UIKitExtensions.swift
+//  UIKit+Extensions.swift
 //  SuperApp
 //
 //  Created by Abimanyu Pramukti on 11/08/23.
