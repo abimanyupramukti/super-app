@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Then
 
 protocol HomeViewDelegate: AnyObject {
     func didTapBottomsheet()
@@ -14,15 +15,13 @@ protocol HomeViewDelegate: AnyObject {
 
 final class HomeView: DefaultView {
     
-    private let mainStack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.alignment = .fill
-        stack.distribution = .fillProportionally
-        stack.isLayoutMarginsRelativeArrangement = true
-        stack.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-        return stack
-    }()
+    private let mainStack = UIStackView().then {
+        $0.axis = .vertical
+        $0.alignment = .fill
+        $0.distribution = .fillProportionally
+        $0.isLayoutMarginsRelativeArrangement = true
+        $0.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
     
     weak var delegate: HomeViewDelegate?
     
@@ -51,17 +50,16 @@ final class HomeView: DefaultView {
     }
     
     private func makeActionButton(title: String, _ action: @escaping () -> Void) -> UIButton {
-        let button = ActionButton()
-        button.setTitle(title, for: .normal)
-        button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .systemBackground
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.systemBlue.cgColor
-        button.layer.cornerRadius = 8 
-        button.tapAction = action
-        button.snp.makeConstraints { make in
-            make.height.equalTo(50)
+        return ActionButton().then {
+            $0.setTitle(title, for: .normal)
+            $0.setTitleColor(.label, for: .normal)
+            $0.layer.borderWidth = 1
+            $0.layer.borderColor = UIColor.label.cgColor
+            $0.layer.cornerRadius = 8
+            $0.tapAction = action
+            $0.snp.makeConstraints { make in
+                make.height.equalTo(50)
+            }
         }
-        return button
     }
 }

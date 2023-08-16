@@ -14,12 +14,10 @@ protocol BottomsheetViewDelegate: AnyObject {
 
 final class BottomsheetView: DefaultView {
     
-    private let handleView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGray2
-        view.layer.cornerRadius = 4
-        return view
-    }()
+    private let handleView = UIView().then {
+        $0.backgroundColor = .systemGray
+        $0.layer.cornerRadius = 4
+    }
     
     private let contentView: UIView
     

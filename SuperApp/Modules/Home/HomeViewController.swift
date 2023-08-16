@@ -6,14 +6,13 @@
 //
 
 import UIKit
+import Then
 
 final class HomeViewController: TabBarViewController {
     
-    private lazy var homeView: HomeView = {
-        let view = HomeView()
-        view.delegate = self
-        return view
-    }()
+    private lazy var homeView = HomeView().then {
+        $0.delegate = self
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

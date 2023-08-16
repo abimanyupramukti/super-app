@@ -14,7 +14,7 @@ final class CameraViewController: TabBarViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTabBarItem(title: "Home", image: UIImage(systemName: "house"))
+        setTabBarItem(title: "Camera", image: UIImage(systemName: "camera"))
         
         view = cameraView
         cameraView.configureSession()

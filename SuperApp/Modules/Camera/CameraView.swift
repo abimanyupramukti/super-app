@@ -17,29 +17,23 @@ final class CameraView: DefaultView {
     private var currentDevice: AVCaptureDevice?
     
     // MARK: - Component Properties
-    private let previewView: VideoPreviewView = {
-        let view = VideoPreviewView()
-        view.previewLayer.borderWidth = 1
-        view.previewLayer.borderColor = UIColor.white.cgColor
-        view.previewLayer.cornerRadius = 8
-        view.layer.masksToBounds = true
-        return view
-    }()
+    private let scrollView = UIScrollView()
     
-    private let scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        return scrollView
-    }()
+    private let previewView = VideoPreviewView().then {
+        $0.previewLayer.borderWidth = 1
+        $0.previewLayer.borderColor = UIColor.label.cgColor
+        $0.previewLayer.cornerRadius = 8
+        $0.previewLayer.videoGravity = .resizeAspectFill
+        $0.layer.masksToBounds = true
+    }
     
-    private let objectStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.spacing = 8
-        stackView.alignment = .center
-        stackView.distribution = .fillProportionally
-        stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0)
-        return stackView
-    }()
+    private let objectStackView = UIStackView().then {
+        $0.spacing = 8
+        $0.alignment = .center
+        $0.distribution = .fillProportionally
+        $0.isLayoutMarginsRelativeArrangement = true
+        $0.layoutMargins = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0)
+    }
     
     override func setupSubviews() {
         scrollView.addSubview(objectStackView)
@@ -145,42 +139,42 @@ extension CameraView: AVCaptureMetadataOutputObjectsDelegate {
     }
     
     private func makeHighilghtRect(_ rect: CGRect, type: AVMetadataObject.ObjectType) -> UIView {
-        let view = UIView(frame: rect)
-        view.backgroundColor = .clear
-        view.layer.borderColor = UIColor.systemGreen.cgColor
-        view.layer.borderWidth = 1
-        view.layer.cornerRadius = 4
-        return view
+        return UIView(frame: rect).then {
+            $0.backgroundColor = .clear
+            $0.layer.borderColor = UIColor.systemGreen.cgColor
+            $0.layer.borderWidth = 1
+            $0.layer.cornerRadius = 4
+        }
     }
     
     private func makeTypeLabel(_ rect: CGRect, type: AVMetadataObject.ObjectType) -> UILabel {
-        let label = UILabel()
-        label.text = type.rawValue
-        label.font = .systemFont(ofSize: 12)
-        label.backgroundColor = .systemGreen.withAlphaComponent(0.2)
-        label.textColor = .white
-        label.frame.size = label.intrinsicContentSize
-        label.frame.origin = CGPoint(x: (rect.width - label.intrinsicContentSize.width)/2, y: (rect.height - label.intrinsicContentSize.height)/2)
-        return label
+        return UILabel().then {
+            $0.text = type.rawValue
+            $0.font = .systemFont(ofSize: 12)
+            $0.backgroundColor = .systemGreen.withAlphaComponent(0.2)
+            $0.textColor = .label
+        }
     }
     
     private func makeObjectCounterView(name: String, count: Int) -> UIView {
-        let nameLabel = UILabel()
-        nameLabel.text = name
-        nameLabel.textColor = .white
+        let nameLabel = UILabel().then {
+            $0.text = name
+            $0.textColor = .label
+        }
         
-        let countLabel = UILabel()
-        countLabel.text = "\(count) " + (count > 1 ? "objects" : "object")
-        countLabel.textColor = .white
+        let countLabel = UILabel().then {
+            $0.text = "\(count) " + (count > 1 ? "objects" : "object")
+            $0.textColor = .label
+        }
         
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, countLabel])
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = UIEdgeInsets(top: 2, left: 4, bottom: 2, right: 4)
-        stackView.layer.borderColor = UIColor.white.cgColor
-        stackView.layer.borderWidth = 1
-        stackView.layer.cornerRadius = 4
-        return stackView
+        return UIStackView(arrangedSubviews: [nameLabel, countLabel]).then {
+            $0.axis = .vertical
+            $0.alignment = .center
+            $0.isLayoutMarginsRelativeArrangement = true
+            $0.layoutMargins = UIEdgeInsets(top: 2, left: 4, bottom: 2, right: 4)
+            $0.layer.borderColor = UIColor.white.cgColor
+            $0.layer.borderWidth = 1
+            $0.layer.cornerRadius = 4
+        }
     }
 }
