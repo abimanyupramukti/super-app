@@ -15,15 +15,11 @@ final class HomeViewController: TabBarViewController {
         return view
     }()
     
-    override func commonInit() {
-        setTabBarItem(title: "Home", image: UIImage(systemName: "house"))
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTabBarItem(title: "Home", image: UIImage(systemName: "house"))
         
         view = homeView
-        view.backgroundColor = .systemBackground
     }
 }
 

@@ -22,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             homeView,
             cameraView
         ], animated: false)
-            
-        CoreDataManager.shared.container
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = mainTabBarController

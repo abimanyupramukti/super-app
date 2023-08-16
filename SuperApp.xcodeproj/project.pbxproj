@@ -57,6 +57,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40255FBE2A8CEB1B002FAA17 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				40D623F72A8680FE00B60966 /* CameraViewController.swift */,
+				40D623F92A86818800B60966 /* CameraView.swift */,
+				40D623FB2A8681F700B60966 /* VideoPreviewView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		40255FBF2A8CEB33002FAA17 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				40255FC02A8CEB64002FAA17 /* Home */,
+				40255FBE2A8CEB1B002FAA17 /* Camera */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		40255FC02A8CEB64002FAA17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4015EC9C2A865BB2001B5524 /* HomeViewController.swift */,
+				4015EC9E2A865CBB001B5524 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		40255FC12A8CEB77002FAA17 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				40255FC22A8CEB99002FAA17 /* Bottomsheet */,
+				4015ECA62A8666B2001B5524 /* DefaultViewController.swift */,
+				4015ECA02A865CEC001B5524 /* DefaultView.swift */,
+				4015EC9A2A865B7C001B5524 /* TabBarViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		40255FC22A8CEB99002FAA17 /* Bottomsheet */ = {
+			isa = PBXGroup;
+			children = (
+				4015ECA42A866684001B5524 /* BottomsheetViewController.swift */,
+				4015ECA82A866802001B5524 /* BottomsheetView.swift */,
+			);
+			path = Bottomsheet;
+			sourceTree = "<group>";
+		};
+		40255FC32A8CEBE6002FAA17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4015ECA22A8660E0001B5524 /*  UIKit+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4094B1082A8655B0004FE8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -78,20 +134,12 @@
 			children = (
 				4094B1142A8655B0004FE8B2 /* AppDelegate.swift */,
 				4015EC982A86592B001B5524 /* MainTabBarController.swift */,
-				40D623F72A8680FE00B60966 /* CameraViewController.swift */,
-				40D623F92A86818800B60966 /* CameraView.swift */,
-				40D623FB2A8681F700B60966 /* VideoPreviewView.swift */,
-				4015EC9C2A865BB2001B5524 /* HomeViewController.swift */,
-				4015EC9E2A865CBB001B5524 /* HomeView.swift */,
-				4015ECA42A866684001B5524 /* BottomsheetViewController.swift */,
-				4015ECA82A866802001B5524 /* BottomsheetView.swift */,
+				40255FBF2A8CEB33002FAA17 /* Modules */,
+				40255FC12A8CEB77002FAA17 /* Components */,
+				40255FC32A8CEBE6002FAA17 /* Extensions */,
 				4094B11D2A8655B1004FE8B2 /* Assets.xcassets */,
 				4094B11F2A8655B1004FE8B2 /* LaunchScreen.storyboard */,
 				4094B1222A8655B1004FE8B2 /* Info.plist */,
-				4015ECA62A8666B2001B5524 /* DefaultViewController.swift */,
-				4015ECA02A865CEC001B5524 /* DefaultView.swift */,
-				4015EC9A2A865B7C001B5524 /* TabBarViewController.swift */,
-				4015ECA22A8660E0001B5524 /*  UIKit+Extensions.swift */,
 			);
 			path = SuperApp;
 			sourceTree = "<group>";

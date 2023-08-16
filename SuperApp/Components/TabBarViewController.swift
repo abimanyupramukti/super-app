@@ -7,20 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
-    
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        
-        commonInit()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func commonInit() {}
-    
+class TabBarViewController: DefaultViewController {
     func setTabBarItem(title: String, image: UIImage?) {
         let tabBarItem = UITabBarItem(title: title, image: image, tag: 0)
         self.tabBarItem = tabBarItem
