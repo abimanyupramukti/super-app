@@ -53,6 +53,7 @@ final class HomeView: DefaultView {
     private func makeActionButton(title: String, _ action: @escaping () -> Void) -> UIButton {
         let button = ActionButton()
         button.setTitle(title, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.backgroundColor = .systemBackground
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.systemBlue.cgColor
@@ -62,27 +63,5 @@ final class HomeView: DefaultView {
             make.height.equalTo(50)
         }
         return button
-    }
-}
-
-class ActionButton: UIButton {
-    var tapAction: (() -> Void)?
-    
-    init() {
-        super.init(frame: .zero)
-        
-        setGestureAction()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func setGestureAction() {
-        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapAction)))
-    }
-    
-    @objc private func didTapAction() {
-        tapAction?()
     }
 }
