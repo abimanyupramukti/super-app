@@ -14,11 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
+        let toDoView = UINavigationController(rootViewController: JobListViewController())
         let homeView = UINavigationController(rootViewController: HomeViewController())
         let cameraView = UINavigationController(rootViewController: CameraViewController())
         
         let mainTabBarController = MainTabBarController()
         mainTabBarController.setViewControllers([
+            toDoView,
             homeView,
             cameraView
         ], animated: false)
@@ -30,4 +32,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
