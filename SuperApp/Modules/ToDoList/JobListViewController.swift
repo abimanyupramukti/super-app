@@ -50,7 +50,7 @@ final class JobListViewController: UITableViewController {
     }
     
     private func fetchData() {
-        jobs = dataManager.fetch(type: Job.self) ?? []
+        jobs = dataManager.fetch(type: Job.self)
         tableView.reloadData()
     }
     

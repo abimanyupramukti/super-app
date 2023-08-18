@@ -17,7 +17,6 @@ final class CameraViewController: TabBarViewController {
         setTabBarItem(title: "Camera", image: UIImage(systemName: "camera"))
         
         view = cameraView
-        cameraView.configureSession()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -29,6 +28,7 @@ final class CameraViewController: TabBarViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        cameraView.configureSession()
         cameraView.toggleSessionRunning()
     }
     
