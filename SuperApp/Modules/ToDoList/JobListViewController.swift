@@ -25,12 +25,19 @@ final class JobListViewController: UITableViewController {
     private var jobs: [Job] = []
     private let dataManager = CoreDataManager.shared
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        
+        title = "ToDo"
+        tabBarItem = UITabBarItem(title: title, image: UIImage(systemName: "case"), tag: 0)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let titleText = "ToDo"
-        tabBarItem = UITabBarItem(title: titleText, image: UIImage(systemName: "case"), tag: 0)
-        title = titleText
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
@@ -58,6 +65,7 @@ final class JobListViewController: UITableViewController {
         var view = JobInputView(job: job)
         view.delegate = self
         let jobInputViewController = UIHostingController(rootView: view)
+        jobInputViewController.title = "Add Task"
         present(jobInputViewController, animated: true)
     }
     

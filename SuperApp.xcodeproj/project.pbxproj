@@ -23,6 +23,15 @@
 		40255FCD2A8D0C79002FAA17 /* JobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40255FCC2A8D0C79002FAA17 /* JobListViewController.swift */; };
 		40255FD02A8D0FE7002FAA17 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40255FCE2A8D0FE7002FAA17 /* ToDoList.xcdatamodeld */; };
 		40255FD22A8D0FF9002FAA17 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40255FD12A8D0FF9002FAA17 /* CoreDataManager.swift */; };
+		4067BE222A92A8F800E569B3 /* HeroListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067BE212A92A8F800E569B3 /* HeroListCell.swift */; };
+		4067BE242A92A95700E569B3 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067BE232A92A95700E569B3 /* Hero.swift */; };
+		4067BE262A92B61800E569B3 /* HeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067BE252A92B61800E569B3 /* HeroListViewController.swift */; };
+		4067BE312A934A8A00E569B3 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4067BE302A934A8A00E569B3 /* HeroDetailViewController.swift */; };
+		408E71B92A9511D700B184BD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71B82A9511D700B184BD /* Endpoint.swift */; };
+		408E71BB2A95233600B184BD /* OpenDotaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71BA2A95233600B184BD /* OpenDotaEndpoint.swift */; };
+		408E71BF2A95A40600B184BD /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71BE2A95A40600B184BD /* HeroListView.swift */; };
+		408E71C12A95AA5E00B184BD /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71C02A95AA5E00B184BD /* HeroDetailView.swift */; };
+		408E71CD2A95E0AD00B184BD /* HeroDetailAttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71CC2A95E0AD00B184BD /* HeroDetailAttributeCell.swift */; };
 		4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094B1142A8655B0004FE8B2 /* AppDelegate.swift */; };
 		4094B11E2A8655B1004FE8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11D2A8655B1004FE8B2 /* Assets.xcassets */; };
 		4094B1212A8655B1004FE8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11F2A8655B1004FE8B2 /* LaunchScreen.storyboard */; };
@@ -31,6 +40,7 @@
 		40D4ECBA2A8F51D900213ECC /* Job+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4ECB62A8F51D900213ECC /* Job+CoreDataClass.swift */; };
 		40D4ECBB2A8F51D900213ECC /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4ECB72A8F51D900213ECC /* Job+CoreDataProperties.swift */; };
 		40D4ECC22A8F57D300213ECC /* JobListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4ECC12A8F57D300213ECC /* JobListCellView.swift */; };
+		40D4ECC52A8F697F00213ECC /* OpenDotaAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4ECC42A8F697F00213ECC /* OpenDotaAPIService.swift */; };
 		40D623F82A8680FE00B60966 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623F72A8680FE00B60966 /* CameraViewController.swift */; };
 		40D623FA2A86818800B60966 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623F92A86818800B60966 /* CameraView.swift */; };
 		40D623FC2A8681F700B60966 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D623FB2A8681F700B60966 /* VideoPreviewView.swift */; };
@@ -51,6 +61,15 @@
 		40255FCC2A8D0C79002FAA17 /* JobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewController.swift; sourceTree = "<group>"; };
 		40255FCF2A8D0FE7002FAA17 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		40255FD12A8D0FF9002FAA17 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4067BE212A92A8F800E569B3 /* HeroListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListCell.swift; sourceTree = "<group>"; };
+		4067BE232A92A95700E569B3 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		4067BE252A92B61800E569B3 /* HeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewController.swift; sourceTree = "<group>"; };
+		4067BE302A934A8A00E569B3 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		408E71B82A9511D700B184BD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		408E71BA2A95233600B184BD /* OpenDotaEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDotaEndpoint.swift; sourceTree = "<group>"; };
+		408E71BE2A95A40600B184BD /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
+		408E71C02A95AA5E00B184BD /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		408E71CC2A95E0AD00B184BD /* HeroDetailAttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailAttributeCell.swift; sourceTree = "<group>"; };
 		4094B1112A8655B0004FE8B2 /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4094B1142A8655B0004FE8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4094B11D2A8655B1004FE8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +80,7 @@
 		40D4ECB62A8F51D900213ECC /* Job+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		40D4ECB72A8F51D900213ECC /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		40D4ECC12A8F57D300213ECC /* JobListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListCellView.swift; sourceTree = "<group>"; };
+		40D4ECC42A8F697F00213ECC /* OpenDotaAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDotaAPIService.swift; sourceTree = "<group>"; };
 		40D623F72A8680FE00B60966 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		40D623F92A86818800B60966 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		40D623FB2A8681F700B60966 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
@@ -92,6 +112,7 @@
 		40255FBF2A8CEB33002FAA17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				40D4ECC32A8F68FD00213ECC /* Dota */,
 				40255FCB2A8D0C55002FAA17 /* ToDoList */,
 				40255FC02A8CEB64002FAA17 /* Home */,
 				40255FBE2A8CEB1B002FAA17 /* Camera */,
@@ -148,6 +169,44 @@
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
+		408E71B72A9511C200B184BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				408E71B82A9511D700B184BD /* Endpoint.swift */,
+				408E71BA2A95233600B184BD /* OpenDotaEndpoint.swift */,
+				40D4ECC42A8F697F00213ECC /* OpenDotaAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		408E71BC2A95A3E000B184BD /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				4067BE212A92A8F800E569B3 /* HeroListCell.swift */,
+				4067BE252A92B61800E569B3 /* HeroListViewController.swift */,
+				408E71BE2A95A40600B184BD /* HeroListView.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		408E71BD2A95A3E800B184BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4067BE232A92A95700E569B3 /* Hero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		408E71C22A95AABA00B184BD /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4067BE302A934A8A00E569B3 /* HeroDetailViewController.swift */,
+				408E71C02A95AA5E00B184BD /* HeroDetailView.swift */,
+				408E71CC2A95E0AD00B184BD /* HeroDetailAttributeCell.swift */,
+			);
+			path = HeroDetail;
+			sourceTree = "<group>";
+		};
 		4094B1082A8655B0004FE8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +229,7 @@
 				4094B1142A8655B0004FE8B2 /* AppDelegate.swift */,
 				4015EC982A86592B001B5524 /* MainTabBarController.swift */,
 				40255FBF2A8CEB33002FAA17 /* Modules */,
+				408E71B72A9511C200B184BD /* Networking */,
 				40255FC12A8CEB77002FAA17 /* Components */,
 				40D4ECC02A8F579400213ECC /* Helper */,
 				40255FC32A8CEBE6002FAA17 /* Extensions */,
@@ -186,6 +246,16 @@
 				40255FD12A8D0FF9002FAA17 /* CoreDataManager.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		40D4ECC32A8F68FD00213ECC /* Dota */ = {
+			isa = PBXGroup;
+			children = (
+				408E71BD2A95A3E800B184BD /* Model */,
+				408E71BC2A95A3E000B184BD /* HeroList */,
+				408E71C22A95AABA00B184BD /* HeroDetail */,
+			);
+			path = Dota;
 			sourceTree = "<group>";
 		};
 		40FDADC52A8E4A6500026A99 /* Model */ = {
@@ -278,23 +348,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4067BE262A92B61800E569B3 /* HeroListViewController.swift in Sources */,
 				40D623F82A8680FE00B60966 /* CameraViewController.swift in Sources */,
 				40D4ECB82A8F51D900213ECC /* Person+CoreDataClass.swift in Sources */,
 				40D623FC2A8681F700B60966 /* VideoPreviewView.swift in Sources */,
+				408E71B92A9511D700B184BD /* Endpoint.swift in Sources */,
 				4015EC992A86592B001B5524 /* MainTabBarController.swift in Sources */,
+				408E71BF2A95A40600B184BD /* HeroListView.swift in Sources */,
 				4015EC9B2A865B7C001B5524 /* TabBarViewController.swift in Sources */,
 				40255FD22A8D0FF9002FAA17 /* CoreDataManager.swift in Sources */,
 				40D623FA2A86818800B60966 /* CameraView.swift in Sources */,
 				4015ECA12A865CEC001B5524 /* DefaultView.swift in Sources */,
+				408E71C12A95AA5E00B184BD /* HeroDetailView.swift in Sources */,
+				4067BE312A934A8A00E569B3 /* HeroDetailViewController.swift in Sources */,
 				4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */,
 				4015EC9F2A865CBB001B5524 /* HomeView.swift in Sources */,
 				4015ECA32A8660E0001B5524 /*  UIKit+Extensions.swift in Sources */,
+				4067BE242A92A95700E569B3 /* Hero.swift in Sources */,
+				4067BE222A92A8F800E569B3 /* HeroListCell.swift in Sources */,
 				4015ECA72A8666B2001B5524 /* DefaultViewController.swift in Sources */,
 				4021AABF2A8DF72F00AF32B4 /* JobInputView.swift in Sources */,
 				4015ECA92A866802001B5524 /* BottomsheetView.swift in Sources */,
 				4015EC9D2A865BB2001B5524 /* HomeViewController.swift in Sources */,
+				408E71CD2A95E0AD00B184BD /* HeroDetailAttributeCell.swift in Sources */,
 				40D4ECBA2A8F51D900213ECC /* Job+CoreDataClass.swift in Sources */,
+				408E71BB2A95233600B184BD /* OpenDotaEndpoint.swift in Sources */,
 				40D4ECC22A8F57D300213ECC /* JobListCellView.swift in Sources */,
+				40D4ECC52A8F697F00213ECC /* OpenDotaAPIService.swift in Sources */,
 				40255FCD2A8D0C79002FAA17 /* JobListViewController.swift in Sources */,
 				40D4ECB92A8F51D900213ECC /* Person+CoreDataProperties.swift in Sources */,
 				4015ECA52A866684001B5524 /* BottomsheetViewController.swift in Sources */,
