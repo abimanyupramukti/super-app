@@ -89,3 +89,9 @@ struct JobInputView: View {
         }
     }
 }
+
+struct JobInputViewPreview: PreviewProvider {
+    static var previews: some View {
+        JobInputView()
+    }
+}

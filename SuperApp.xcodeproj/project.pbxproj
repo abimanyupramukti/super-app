@@ -32,6 +32,9 @@
 		408E71BF2A95A40600B184BD /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71BE2A95A40600B184BD /* HeroListView.swift */; };
 		408E71C12A95AA5E00B184BD /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71C02A95AA5E00B184BD /* HeroDetailView.swift */; };
 		408E71CD2A95E0AD00B184BD /* HeroDetailAttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71CC2A95E0AD00B184BD /* HeroDetailAttributeCell.swift */; };
+		408E71D02A97B62D00B184BD /* Representable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71CF2A97B62D00B184BD /* Representable.swift */; };
+		408E71D22A97B86000B184BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71D12A97B86000B184BD /* LoginViewController.swift */; };
+		408E71D42A98D1D600B184BD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E71D32A98D1D600B184BD /* Validation.swift */; };
 		4094B1152A8655B0004FE8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094B1142A8655B0004FE8B2 /* AppDelegate.swift */; };
 		4094B11E2A8655B1004FE8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11D2A8655B1004FE8B2 /* Assets.xcassets */; };
 		4094B1212A8655B1004FE8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094B11F2A8655B1004FE8B2 /* LaunchScreen.storyboard */; };
@@ -70,6 +73,9 @@
 		408E71BE2A95A40600B184BD /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
 		408E71C02A95AA5E00B184BD /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		408E71CC2A95E0AD00B184BD /* HeroDetailAttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailAttributeCell.swift; sourceTree = "<group>"; };
+		408E71CF2A97B62D00B184BD /* Representable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representable.swift; sourceTree = "<group>"; };
+		408E71D12A97B86000B184BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		408E71D32A98D1D600B184BD /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		4094B1112A8655B0004FE8B2 /* SuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4094B1142A8655B0004FE8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4094B11D2A8655B1004FE8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 		40255FBF2A8CEB33002FAA17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				408E71CE2A97B60D00B184BD /* Login */,
 				40D4ECC32A8F68FD00213ECC /* Dota */,
 				40255FCB2A8D0C55002FAA17 /* ToDoList */,
 				40255FC02A8CEB64002FAA17 /* Home */,
@@ -137,6 +144,7 @@
 				4015ECA02A865CEC001B5524 /* DefaultView.swift */,
 				4015EC9A2A865B7C001B5524 /* TabBarViewController.swift */,
 				40255FC42A8CF353002FAA17 /* ActionButton.swift */,
+				408E71CF2A97B62D00B184BD /* Representable.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -207,6 +215,14 @@
 			path = HeroDetail;
 			sourceTree = "<group>";
 		};
+		408E71CE2A97B60D00B184BD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				408E71D12A97B86000B184BD /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		4094B1082A8655B0004FE8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				40255FD12A8D0FF9002FAA17 /* CoreDataManager.swift */,
+				408E71D32A98D1D600B184BD /* Validation.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -366,15 +383,18 @@
 				4015ECA32A8660E0001B5524 /*  UIKit+Extensions.swift in Sources */,
 				4067BE242A92A95700E569B3 /* Hero.swift in Sources */,
 				4067BE222A92A8F800E569B3 /* HeroListCell.swift in Sources */,
+				408E71D02A97B62D00B184BD /* Representable.swift in Sources */,
 				4015ECA72A8666B2001B5524 /* DefaultViewController.swift in Sources */,
 				4021AABF2A8DF72F00AF32B4 /* JobInputView.swift in Sources */,
 				4015ECA92A866802001B5524 /* BottomsheetView.swift in Sources */,
+				408E71D42A98D1D600B184BD /* Validation.swift in Sources */,
 				4015EC9D2A865BB2001B5524 /* HomeViewController.swift in Sources */,
 				408E71CD2A95E0AD00B184BD /* HeroDetailAttributeCell.swift in Sources */,
 				40D4ECBA2A8F51D900213ECC /* Job+CoreDataClass.swift in Sources */,
 				408E71BB2A95233600B184BD /* OpenDotaEndpoint.swift in Sources */,
 				40D4ECC22A8F57D300213ECC /* JobListCellView.swift in Sources */,
 				40D4ECC52A8F697F00213ECC /* OpenDotaAPIService.swift in Sources */,
+				408E71D22A97B86000B184BD /* LoginViewController.swift in Sources */,
 				40255FCD2A8D0C79002FAA17 /* JobListViewController.swift in Sources */,
 				40D4ECB92A8F51D900213ECC /* Person+CoreDataProperties.swift in Sources */,
 				4015ECA52A866684001B5524 /* BottomsheetViewController.swift in Sources */,
